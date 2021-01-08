@@ -17,12 +17,11 @@ translator = Translator()
 for i in l:
     translation = translator.translate(i, dest="fr")
     print(translation.text)
-    fren.extend(translation.text)
+    f3=open("output.txt","a")
+    f3.write(translation.text)
+    f3.write("\n")
+    f3.close()
 
-f3=open("output.txt","w")
-f3.writelines(fren)
-f3.close()
-   
 
 
         
